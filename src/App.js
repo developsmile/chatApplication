@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useState } from 'react'
+import Splash from './pages/Splash'
+import Welcome from './pages/Welcome';
+import Signin from './pages/Signin'
+const App = () => {
+  const [splash,setSplash] = useState(false);
+  setTimeout(()=>{
+    setSplash(true)
+  },3000)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {
+        !splash ? <Splash />:
+        // <Welcome />
+        <Signin />
+      }
+      
+      
+    </>
+  )
 }
 
-export default App;
+export default App

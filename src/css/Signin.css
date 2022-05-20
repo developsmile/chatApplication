@@ -1,0 +1,84 @@
+a{
+    color: white;
+}
+.signin-container{
+    width:50%;
+    height: 55vh;
+    background-color: white;
+    display: flex;
+    margin:100px auto;
+    border-radius: 15px;
+}
+.signin-container > .signin-left{
+    width: 50%;
+    background-color: #4D4C7D;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.signin-left > h2{
+    font-size: 30px;
+    color: white;
+}
+.signin-left > img{
+    width: 35%;
+    margin-top: 50px;
+}
+
+.signin-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signin-right > .input{
+    width: 80%;
+    margin: 20px auto 0px auto;
+}
+.signin-right > .button{
+    width: 70%;
+    margin: 25px auto;
+    color: white;
+    background-color: #4D4C7D;
+}
+.signin-right > .button:hover{
+    background-color: #4D4C7D;
+}
+.signin-right > .forgot-password{
+    color: #C4C4C4;
+    width: 70%;
+    margin: 2px auto;
+    text-align: end;
+    font-size: 15px;
+}
+.signin-right > .divider{
+    width: 100%;
+    margin-top: 30px;
+    color: #C4C4C4;
+}
+.signin-right > p{
+    width: 80%;
+    font-size: 15px;
+    color: #C4C4C4;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 30px;
+}
+.signin-right > p > a{
+    font-size: 15px;
+    color: #4D4C7D;
+    font-weight: 700px;
+    animation: signup 2s infinite;
+}
+@keyframes signup {
+    0%{
+        color: rgb(255, 0, 0);
+    }
+    50%{
+        color: #0400f2;
+    }
+    100%{ color: rgb(255, 230, 3);
+    }
+}
